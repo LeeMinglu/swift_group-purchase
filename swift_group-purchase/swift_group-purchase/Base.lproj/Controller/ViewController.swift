@@ -9,10 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let pathString = "tgs.plist"
+    var GoodsModelArray: [LSGoods] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        initData()
+    }
+    
+    func initData() {
+        let path = NSBundle.mainBundle().pathForResource(pathString, ofType: nil)
+        let GoodsArray = NSArray(contentsOfFile: path!)!
+        
+        var tempArray: [LSGoods] = []
+        
+        for goods in GoodsArray {
+            let good = LSGoods.parse(dict: goods as! NSDictionary)
+            tempArray.append(good)
+        }
+        
+        self.GoodsModelArray = tempArray
+        
+        print(self.GoodsModelArray)
+        
     }
 
     override func didReceiveMemoryWarning() {
