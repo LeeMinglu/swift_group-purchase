@@ -79,9 +79,7 @@
 				1A0BFEB21D747A6700D50DBF /* Controller */,
 				1A0BFEBA1D747A7A00D50DBF /* View */,
 				1A0BFEB51D747A7000D50DBF /* Model */,
-				1A0BFEA41D746CD700D50DBF /* Main.storyboard */,
 				1A0BFEA71D746CD700D50DBF /* Assets.xcassets */,
-				1A0BFEA91D746CD700D50DBF /* LaunchScreen.storyboard */,
 				1A0BFEB61D747A7000D50DBF /* AppDelegate.swift */,
 				1A0BFEBB1D74808200D50DBF /* tgs.plist */,
 				1A0BFEB71D747A7000D50DBF /* Info.plist */,
@@ -110,6 +108,8 @@
 		1A0BFEBA1D747A7A00D50DBF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A0BFEA41D746CD700D50DBF /* Main.storyboard */,
+				1A0BFEA91D746CD700D50DBF /* LaunchScreen.storyboard */,
 			);
 			name = View;
 			path = Base.lproj/View;
@@ -269,6 +269,7 @@
 				1A0BFEA51D746CD700D50DBF /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		1A0BFEA91D746CD700D50DBF /* LaunchScreen.storyboard */ = {
@@ -277,6 +278,7 @@
 				1A0BFEAA1D746CD700D50DBF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
