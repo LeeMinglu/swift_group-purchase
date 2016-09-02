@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A006A8D1D75C9A500C1C0AA /* MLTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A006A8C1D75C9A500C1C0AA /* MLTableViewCell.xib */; };
+		1A006A8F1D75CD8F00C1C0AA /* LSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A006A8E1D75CD8F00C1C0AA /* LSTableViewCell.swift */; };
 		1A0BFEA61D746CD700D50DBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BFEA41D746CD700D50DBF /* Main.storyboard */; };
 		1A0BFEA81D746CD700D50DBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BFEA71D746CD700D50DBF /* Assets.xcassets */; };
 		1A0BFEAB1D746CD700D50DBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0BFEA91D746CD700D50DBF /* LaunchScreen.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A006A8C1D75C9A500C1C0AA /* MLTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLTableViewCell.xib; sourceTree = "<group>"; };
+		1A006A8E1D75CD8F00C1C0AA /* LSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTableViewCell.swift; sourceTree = "<group>"; };
 		1A0BFE9D1D746CD700D50DBF /* swift_group-purchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift_group-purchase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A0BFEA51D746CD700D50DBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A0BFEA71D746CD700D50DBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				1A0BFEB31D747A6700D50DBF /* ViewController.swift */,
+				1A006A8C1D75C9A500C1C0AA /* MLTableViewCell.xib */,
+				1A006A8E1D75CD8F00C1C0AA /* LSTableViewCell.swift */,
 			);
 			name = Controller;
 			path = Base.lproj/Controller;
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A006A8D1D75C9A500C1C0AA /* MLTableViewCell.xib in Resources */,
 				1A0BFEBC1D74808200D50DBF /* tgs.plist in Resources */,
 				1A0BFEB91D747A7000D50DBF /* Info.plist in Resources */,
 				1A0BFEAB1D746CD700D50DBF /* LaunchScreen.storyboard in Resources */,
@@ -256,6 +263,7 @@
 				1A0BFED41D7481E400D50DBF /* Reflect.swift in Sources */,
 				1A0BFED01D7481E400D50DBF /* Reflect+Class.swift in Sources */,
 				1A0BFECE1D7481E400D50DBF /* Reflect+Parse.swift in Sources */,
+				1A006A8F1D75CD8F00C1C0AA /* LSTableViewCell.swift in Sources */,
 				1A0BFECF1D7481E400D50DBF /* Reflect+Convert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

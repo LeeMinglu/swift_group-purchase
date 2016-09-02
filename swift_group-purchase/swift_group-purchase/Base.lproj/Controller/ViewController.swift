@@ -75,19 +75,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let ID = "good"
-        var cell = tableView.dequeueReusableCellWithIdentifier(ID)
-        
-        if cell == nil {
-           cell = UITableViewCell.init(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ID)
-        }
-        
+//        let ID = "good"
+//        var cell = tableView.dequeueReusableCellWithIdentifier(ID)
+//        
+//        if cell == nil {
+//           cell = UITableViewCell.init(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ID)
+//        }
+//        
         let good = self.GoodsModelArray[indexPath.row]
-        cell?.textLabel?.text = good.title
-        cell?.imageView?.image = UIImage(named: good.icon)
-        cell?.detailTextLabel?.text = good.price
+//        cell?.textLabel?.text = good.title
+//        cell?.imageView?.image = UIImage(named: good.icon)
+//        cell?.detailTextLabel?.text = good.price
+//        
+//        return cell!
+        let cell = LSTableViewCell.goodsCellWithTableView(tableView)
         
-        return cell!
+        cell.goodsProperty = good
+        
+        return cell
+        
+        
     }
     
     
