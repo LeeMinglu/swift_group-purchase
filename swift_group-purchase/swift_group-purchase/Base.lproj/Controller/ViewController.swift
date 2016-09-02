@@ -24,8 +24,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //添加tableView
         addTableView()
         
-        
+        //设置footerView
+        addFooterView()
     }
+    
+    
     
     // MARK:   加载数据
     func loadData() {
@@ -65,6 +68,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
+    //MARK: 设置footerView
+    func addFooterView() {
+       
+        self.tableView.tableFooterView = LSFooterView.initView()
+    }
+    
+    
     // MARK:  DataSource Method
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -101,6 +111,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 80
     }
+    
+    
+//    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        <#code#>
+//    }
     
     
 

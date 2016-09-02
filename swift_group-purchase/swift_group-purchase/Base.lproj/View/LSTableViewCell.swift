@@ -31,7 +31,7 @@ class LSTableViewCell: UITableViewCell {
         
             self.imgView.image = UIImage(named: goods.icon)
             self.LTitle.text = goods!.title
-            self.LPrice.text = goods!.price
+            self.LPrice.text = "价格：" + goods!.price
             self.LBuyCount.text = goods!.buyCount + "人已购买"
         }
     }
@@ -42,7 +42,7 @@ class LSTableViewCell: UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(ID)
         
         if cell == nil {
-            cell = NSBundle.mainBundle().loadNibNamed("MLTableViewCell", owner: nil, options: nil).last as! LSTableViewCell
+            cell = NSBundle.mainBundle().loadNibNamed("LSTableViewCell", owner: nil, options: nil).last as! LSTableViewCell
         }
         
         return cell as! LSTableViewCell
