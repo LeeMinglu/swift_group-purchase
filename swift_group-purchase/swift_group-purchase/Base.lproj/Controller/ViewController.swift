@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FooterViewDelegate {
     
     var tableView: UITableView!
     let ScreenRect = UIScreen.mainScreen().bounds
@@ -70,8 +70,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //MARK: 设置footerView
     func addFooterView() {
-       
-        self.tableView.tableFooterView = LSFooterView.initView()
+        let footerView: LSFooterView = LSFooterView.initView()
+        footerView.delegate = self
+        self.tableView.tableFooterView = footerView
+        
+    }
+    
+    func didClickFooterView(footerView: LSFooterView) {
+        
     }
     
     

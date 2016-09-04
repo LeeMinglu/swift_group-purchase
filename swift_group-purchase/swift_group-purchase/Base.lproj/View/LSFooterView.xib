@@ -15,6 +15,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="加载更多"/>
+                    <connections>
+                        <action selector="clickLoadMoreBtn:" destination="vzn-7x-WcG" eventType="touchUpInside" id="mgN-v5-pO4"/>
+                    </connections>
                 </button>
                 <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h5R-ge-XKb">
                     <rect key="frame" x="78" y="0.0" width="219" height="44"/>
@@ -37,7 +40,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="LoadMoreBtn" destination="cjY-xx-URq" id="S4r-w0-0GQ"/>
-                <outlet property="WaitView" destination="h5R-ge-XKb" id="Uyr-cr-iiN"/>
+                <outlet property="WaitView" destination="h5R-ge-XKb" id="9S0-xL-cQ3"/>
             </connections>
             <point key="canvasLocation" x="287.5" y="219"/>
         </view>
