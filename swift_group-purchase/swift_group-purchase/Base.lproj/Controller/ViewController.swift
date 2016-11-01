@@ -77,6 +77,34 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func didClickFooterView(footerView: LSFooterView) {
+        print("点击了footerView")
+        let model: LSGoods! = LSGoods()
+        model.title = "加了一条"
+        model.icon = "37e4761e6ecf56a2d78685df7157f097.png"
+        model.price = "20"
+        model.buyCount = "50"
+       
+        self.GoodsModelArray.append(model)
+        
+//        let path = NSBundle.mainBundle().pathForResource(pathString, ofType: nil)
+//        let GoodsArray = NSArray(contentsOfFile: path!)!
+//        
+//       
+//        
+//        for goods in GoodsArray {
+//            let good = LSGoods.parse(dict: goods as! NSDictionary)
+//            self.GoodsModelArray.append(good)
+//            
+//        }
+//        
+        
+        
+        
+        let indexPath = NSIndexPath.init(forRow: self.GoodsModelArray.count - 1, inSection: 0)
+        
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        
+        self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated: true)
         
     }
     

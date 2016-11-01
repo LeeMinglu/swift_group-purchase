@@ -42,7 +42,7 @@ class LSTableViewCell: UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(ID)
         
         if cell == nil {
-            cell = NSBundle.mainBundle().loadNibNamed("LSTableViewCell", owner: nil, options: nil).last as! LSTableViewCell
+            cell = NSBundle.mainBundle().loadNibNamed("LSTableViewCell", owner: nil, options: nil)!.last as! LSTableViewCell
         }
         
         return cell as! LSTableViewCell

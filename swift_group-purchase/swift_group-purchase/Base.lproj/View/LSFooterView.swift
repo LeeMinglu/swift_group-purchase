@@ -25,7 +25,7 @@ class LSFooterView: UIView {
     
     
     class func initView() -> LSFooterView {
-        let footerView = NSBundle.mainBundle().loadNibNamed("LSFooterView", owner: nil, options: nil).last
+        let footerView = NSBundle.mainBundle().loadNibNamed("LSFooterView", owner: nil, options: nil)!.last
         return footerView as! LSFooterView
     
     }
